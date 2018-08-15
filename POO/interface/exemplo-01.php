@@ -1,5 +1,5 @@
 <?php 
-// Interface
+// Interface http://php.net/manual/pt_BR/language.oop5.interfaces.php
 
 interface Veiculo {
 
