@@ -18,21 +18,18 @@ $stmt->execute();
 $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 /**
- * percorrendo retorno do banco
+ * percorrendo as linhas que retornram do banco
  */
 foreach($results as $row){
 	/**
-	 * pegando o nome das colunas
+	 * percorrendo as colunas de cada linha retornando chave e valor
 	 */
 	foreach ($row as $key => $value) {
 
-		echo "<strong>" . $key . ":</strong>" . $value . "<br>";
+		echo "<strong>".$key.":</strong>".$value."<br>";
 	}
-	echo "==============================<br>"
-
+	echo "================================================<br>";
 }
- 
-
 
 
  ?>
