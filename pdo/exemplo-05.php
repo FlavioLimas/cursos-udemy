@@ -8,7 +8,9 @@ $sql = $conn->prepare(
 );
 
 $id = 2;
-
+/**
+ * O motodo bindParam() é aplicavel no caso da utilização de uma referencia na query como nesse caso :ID
+ */
 $sql->bindParam(":ID",$id);
 
 $sql->execute();
