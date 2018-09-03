@@ -10,11 +10,19 @@ if (file_exists($fileName)) {
 	$headers = explode(",",fgets($file));
 
 	//var_dump($headers);
-
+	$data = array();
 	while ($row = fgets($file)) {
-		var_dump($row);
+		$rowData = explode(",",$row);
+		$coluna = array();
+
+		for($i = 0;$i < count($headers);$i++){
+			$coluna[$headers[$i]] = $rowData[$i];
+		}
+		array_push($data,$coluna);
 	}
-	fclose();
+	fclose($file);
+
+	echo json_encode($data);
 }
 
 
