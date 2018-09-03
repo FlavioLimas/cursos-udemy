@@ -1,5 +1,5 @@
 <!-- Form sem o action para enviar para propria pagina / enctype="mulpart/form-data" seria para enviar dados binarios-->
-<form method="POST" enctype="mulpart/form-data">
+<form method="POST" enctype="multipart/form-data">
 	<input type="file" name="fileUpload">
 	<button type="submit">Send</button>
 </form>
