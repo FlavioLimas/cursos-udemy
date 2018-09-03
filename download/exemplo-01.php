@@ -14,7 +14,7 @@ $parse = parse_url($link);
 
 // basename — Retorna apenas a parte que corresponde ao nome do arquivo de um caminho/path REF http://php.net/manual/pt_BR/function.basename.php
 $baseName = basename($parse["path"]);
-// Criando o arquivo com o nome definido como primeiro parametro
+// criando o arquivo com o nome definido como primeiro parametro
 $file = fopen($baseName, "w+");
 // Vamos escrever o conteudo do arquivo
 fwrite($file,$content);
