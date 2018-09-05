@@ -1,6 +1,6 @@
 <?php 
 
-// Trabalhando com a biblioteca CURL REF http://php.net/manual/pt_BR/book.curl.php
+// Trabalhando com a biblioteca CURL (API) REF http://php.net/manual/pt_BR/book.curl.php
 $cep = "01310100";
 
 $link = "https://viacep.com.br/ws/$cep/json/";
@@ -24,5 +24,7 @@ curl_close($ch);
 $data = json_decode($response, true);
 
 print_r($data);
+
+
 
 ?>
