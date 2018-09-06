@@ -1,24 +1,21 @@
 <?php 
-// Tratando erros
-/**
- * Funcao que ira manipular o disparo da excecao
- Ira receber os parametros do erro para que possa tratar
- */ 
-function tratandoErros($code, $message, $file, $line){
+// Função que recebe a disparada da excecao manipuladorErros REF http://www.php.net/manual/pt_BR/function.set-error-handler.php 
+function manipuladorErros($code, $message, $file, $line){
 	echo json_encode(array(
-		"code"=>$code,
-		"message"=>$message,
-		"file"=>$file,
-		"line"=>$line
+		'code'=>$code,
+		'message'=>$message,
+		'file'=>$file,
+		'line'=>$line
 	)
 );
 }
 
-// Definir manipulador de erros Chamada da funcao que sera executada no disparo do exception
-set_error_handler("tratandoErros");
+/** REF http://www.php.net/manual/pt_BR/function.set-error-handler.php
+ * O parametro seria o nome da funcao de que recebera a disparada do exception
+ */
+set_error_handler("manipuladorErros");
 
-
-echo 100 / 0;
+$total = 100 / 0;
 
 
 
