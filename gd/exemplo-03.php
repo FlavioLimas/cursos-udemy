@@ -8,7 +8,7 @@ $titleColor = imagecolorallocate($image, 0, 0, 0);
 // 
 $gray = imagecolorallocate($image, 100, 100, 100);
 
-imagettftext($image, 32, 0, 350, 150, $titleColor, "fonts".DIRECTORY_SEPARATOR."Bevan".DIRECTORY_SEPARATOR."Bevan-Regular.ttf","CERTIFICADO");
+imagettftext($image, 32, 0, 350, 250, $titleColor, "fonts".DIRECTORY_SEPARATOR."Bevan".DIRECTORY_SEPARATOR."Bevan-Regular.ttf","CERTIFICADO");
 imagettftext($image, 32, 0, 420, 350, $titleColor, "fonts".DIRECTORY_SEPARATOR."Playball".DIRECTORY_SEPARATOR."Playball-Regular.ttf", "Flavio Lima");
 // Converte uma string com caracteres ISO-8859-1 codificadas com UTF-8 para single-byte ISO-8859-1 Deixa caracteres de acenturação legiveis http://php.net/manual/pt_BR/function.utf8-decode.php
 imagestring($image, 3, 430, 390, utf8_decode("Concluído em: ").date("d/m/Y"), $titleColor);
@@ -20,7 +20,6 @@ header("Content-type: image/jpeg");
 imagejpeg($image);
 
 imagedestroy($image);
-
 
 
  ?>
