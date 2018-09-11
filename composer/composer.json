@@ -1,0 +1,15 @@
+{
+    "name": "flaviolima/composer",
+    "description": "Curso de PHP utilizando Composer",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Flavio Lima",
+            "email": "flaviolima.s@live.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "monolog/monolog":"1.0.*"
+    }
+}
