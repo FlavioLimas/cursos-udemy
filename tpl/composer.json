@@ -9,5 +9,8 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "rain/raintpl": ">=3.0.0",
+        "phpmailer/phpmailer": "~5.2"
+    }
 }
