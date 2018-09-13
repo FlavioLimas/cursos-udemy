@@ -1,4 +1,5 @@
 <?php 
+// Permissao de arquivos
 
 $dir = "arquivos";
 $permissao = "0775"; // Upload de aruivos
@@ -9,7 +10,6 @@ if (!is_dir($dir)) {
 
 	echo "Diretório criado com sucesso!";
 }
-
 
 
 
