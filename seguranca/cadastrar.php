@@ -1,7 +1,7 @@
 <?php 
 // exemplo-04.php quem chama esse arquivo
 /**
- * Implementando o recaptcha do google
+ * Implementando o recaptcha do google https://www.google.com/recaptcha/
  */
 
 $email = $_POST["inputEmail"];
